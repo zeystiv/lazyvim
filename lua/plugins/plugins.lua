@@ -7,4 +7,15 @@ return {
     vim.g.copilot_no_tab_map = true
     vim.api.nvim_set_keymap("i", "<C-g>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
   end,
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {}
+  },
+
+  {
+    "folke/trouble.nvim",
+    cmd = "Trouble",
+  },
 }
