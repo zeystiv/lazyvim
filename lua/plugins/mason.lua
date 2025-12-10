@@ -8,7 +8,7 @@ return {
 
         -- install formatters
         "stylua",
-        "prettier",
+        "prettierd",
 
         -- install debuggers
         "debugpy",
