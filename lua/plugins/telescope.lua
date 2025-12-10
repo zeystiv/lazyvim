@@ -22,6 +22,13 @@ return {
         end,
         desc = "Grep in Project",
       },
+      {
+        "<leader>q",
+        function()
+          require("telescope.builtin").resume()
+        end,
+        desc = "Resume Telescope Search",
+      },
     },
     opts = {
       defaults = {
