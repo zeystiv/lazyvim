@@ -51,4 +51,28 @@ return {
       table.insert(opts.sources, nls.builtins.formatting.prettier)
     end,
   },
+
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "bash",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+        "prisma",
+      },
+    },
+  },
 }

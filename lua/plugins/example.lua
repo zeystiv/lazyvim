@@ -28,7 +28,7 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
+  { "folke/trouble.nvim",      enabled = false },
 
   -- override nvim-cmp and add cmp-emoji
   {
@@ -84,7 +84,7 @@ return {
       init = function()
         require("lazyvim.util").lsp.on_attach(function(_, buffer)
           -- stylua: ignore
-          vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
+          vim.keymap.set("n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
           vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
         end)
       end,
@@ -116,27 +116,6 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
 
   -- add more treesitter parsers
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "bash",
-        "html",
-        "javascript",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
-      },
-    },
-  },
 
   -- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
   -- would overwrite `ensure_installed` with the new value.
