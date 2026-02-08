@@ -18,6 +18,7 @@ return {
 
         -- python
         "python-lsp-server",
+        "astro-language-server",
 
         "typescript-language-server",
         "tailwindcss-language-server",
