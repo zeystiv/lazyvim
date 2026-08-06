@@ -1,6 +1,4 @@
 return {
-  { "wakatime/vim-wakatime", lazy = false },
-
   {
     "zbirenbaum/copilot.lua",
 
